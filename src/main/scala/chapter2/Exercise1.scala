@@ -2,6 +2,9 @@ package chapter2
 
 import scala.annotation.tailrec
 
+/**
+  * The fibTailRec code comes from this url: http://alvinalexander.com/scala/scala-recursion-examples-recursive-programming
+  */
 object Exercise1 {
 
   def fib(n: Int) : BigInt = {
