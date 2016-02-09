@@ -67,7 +67,27 @@ class ListTest extends FunSuite with Checkers {
     }
   }
 
-  test("length retruns the number of elements in a List") {
+  test("length returns the number of elements in a List") {
     assert(length(List(1,2,3)) == 3)
+  }
+
+  test("foldleft") {
+    assert(foldLeft(List(1,2,3),0)((x,y) => x-y) == -6)
+  }
+
+  test("sum3 adds the elements together in a List") {
+    assert(sum3(List(1,2,3)) == 6)
+  }
+
+  test("product3 multiplies the elements together in a List") {
+    assert(product3(List(2,3,4)) == 24)
+  }
+
+  test("length2 returns the number of elements in a List") {
+    assert(length(List(1,2,3)) == 3)
+  }
+
+  test("reverse reverses the elements in a List") {
+    assert(reverse(List(1,2,3)) == List(3,2,1))
   }
 }
